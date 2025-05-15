@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scotch Archive - RTT</title>
+	<link rel="stylesheet" href="styles/banner.css">
+</head>
+<body>
+	<div class="banner">
+		<img class="banner-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Scotch_College%2C_Perth%2C_Crest%2C_Stacked.png" style="width: 40px; height: 55px;">
+		<button class="navbar-button" onclick="location.href='index.html'">Home</button>
+		<button class="navbar-button" onclick="location.href='rtt.html'">Recent Tech Tutorials</button>
+		<button class="navbar-button">Timeline</button>
+		<button class="navbar-button">Keeper's Page</button>
+		<h4 class="header-title">Scotch College Archive</h4>
+	</div>
+
+	<div class="content">
+		<h1>Bypass Restrictions</h1>
+		<p>Learn how to bypass school restrictions effectively.</p>
+	</div>
+
+	<div class="content-switcher">
+		<button class="switcher-button" onclick="showContent('ciscoblocksbypassweb')">Bypass Cisco Blocks (Web)</button>
+		<button class="switcher-button" onclick="showContent('wifiblocksbypassweb')">Bypassing School Wifi Blocks(Web)</button>
+	</div>
+
+	<div id="ciscoblocksbypassweb" class="switcher-content">
+		<h2>Bypassing Cisco Blocks</h2>
+		<p>Cisco blocks are content filters that the school does not want you accessing no matter what, so it is blocked everywhere.</p>
+		<p>However. You can use several browser extensions to bypass this. All discovered unblocked VPNs are listed here:</p>
+		<list>
+			<li><a href="https://www.google.com/search?q=browsec+vpn+chrome+and+firefox" target="_blank">Browsec</a> - Free. Compatible with Chromium & Mozilla.</li>
+		</list>
+	</div>
+	<div id="wifiblocksbypassweb" class="switcher-content" style="display: none;">
+		<h2>Bypassing School Wifi Blocks</h2>
+		<p>Browsec currently works as of now.</p>
+	</div>
+
+
+	<script>
+		function showContent(id) {
+			document.querySelectorAll('.switcher-content').forEach(content => {
+				content.style.display = 'none';
+			});
+			document.getElementById(id).style.display = 'block';
+		}
+	</script>
+</body>
+</html>
