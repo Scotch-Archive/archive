@@ -17,38 +17,17 @@
 	</div>
 
 	<div class="content">
-		<h1>Bypass Restrictions</h1>
-		<p>Learn how to bypass school restrictions effectively.</p>
-	</div>
+		<h2>Bypassing School Restrictions</h2>
+		<p>These browser-based VPNs may help get around content filters and blocked websites on school networks.</p>
 
-	<div class="content-switcher">
-		<button class="switcher-button" onclick="showContent('ciscoblocksbypassweb')">Bypass Cisco Blocks (Web)</button>
-		<button class="switcher-button" onclick="showContent('wifiblocksbypassweb')">Bypassing School Wifi Blocks(Web)</button>
-	</div>
+		<h3>Available VPN Options</h3>
+		<ul>
+			<li><a href="https://www.google.com/search?q=browsec+vpn+chrome+and+firefox" target="_blank">Browsec</a> – Browser extension. Works on Chrome and Firefox. May be blocked depending on the network.</li>
+			<li><a href="https://www.google.com/search?q=hoxx+vpn+chrome+and+firefox" target="_blank">Hoxx</a> – Browser extension. Also works on Chrome and Firefox. May be blocked by some filters.</li>
+			<li><a href="assets/ultrasurf.zip" download>UltraSurf</a> – Requires MANUAL installation. Tutorial <a href="https://www.ssl2buy.com/wiki/how-to-manually-install-a-chrome-extension-in-2-ways">here.</a>. May bypass filters that block browser extensions, but it can be flagged or blocked on managed networks.</li>
+		</ul>
 
-	<div id="ciscoblocksbypassweb" class="switcher-content">
-		<h2>Bypassing Cisco Blocks</h2>
-		<p>Cisco blocks are content filters that the school does not want you accessing no matter what, so it is blocked everywhere.</p>
-		<p>However. You can use several browser extensions to bypass this. All discovered unblocked VPNs are listed here:</p>
-		<list>
-			<li><a href="https://www.google.com/search?q=browsec+vpn+chrome+and+firefox" target="_blank">Browsec</a> - Free. Compatible with Chromium & Mozilla.</li>
-			<li><a href="https://www.google.com/search?q=hoxx+vpn+chrome+and+firefox" target="_blank">Hoxx</a> - Free. Compatible with Chromium & Mozilla.</li>
-		</list>
+		<p>None of these methods are guaranteed to work all the time. Filters change, and VPNs may stop working without notice.</p>
 	</div>
-	<div id="wifiblocksbypassweb" class="switcher-content" style="display: none;">
-		<h2>Bypassing School Wifi Blocks</h2>
-		<p>Browsec and Hoxx currently works as of now.</p>
-		<p>Sometimes a VPN can be blocked on school wifi but not by Cisco, allowing for use at home.</p>
-	</div>
-
-
-	<script>
-		function showContent(id) {
-			document.querySelectorAll('.switcher-content').forEach(content => {
-				content.style.display = 'none';
-			});
-			document.getElementById(id).style.display = 'block';
-		}
-	</script>
 </body>
 </html>
